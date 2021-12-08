@@ -42,9 +42,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.TBCatmet = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.TBBMImet = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -54,6 +52,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.NudStones = new System.Windows.Forms.NumericUpDown();
+            this.bmiTextMet = new System.Windows.Forms.TextBox();
+            this.CatMet = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -91,19 +91,19 @@
             // mainMenuToolStripMenuItem
             // 
             this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(132, 6);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
             this.toolStripMenuItem1.Text = "Exit";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -153,13 +153,13 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.CatMet);
+            this.panel3.Controls.Add(this.bmiTextMet);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.TBCatmet);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.TBBMImet);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 16);
@@ -211,17 +211,6 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Underweight: less than 18.5";
             // 
-            // TBCatmet
-            // 
-            this.TBCatmet.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TBCatmet.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBCatmet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.TBCatmet.Location = new System.Drawing.Point(150, 43);
-            this.TBCatmet.Name = "TBCatmet";
-            this.TBCatmet.ReadOnly = true;
-            this.TBCatmet.Size = new System.Drawing.Size(158, 31);
-            this.TBCatmet.TabIndex = 3;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -232,17 +221,6 @@
             this.label6.Size = new System.Drawing.Size(107, 25);
             this.label6.TabIndex = 2;
             this.label6.Text = "Category";
-            // 
-            // TBBMImet
-            // 
-            this.TBBMImet.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TBBMImet.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBBMImet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.TBBMImet.Location = new System.Drawing.Point(150, 6);
-            this.TBBMImet.Name = "TBBMImet";
-            this.TBBMImet.ReadOnly = true;
-            this.TBBMImet.Size = new System.Drawing.Size(158, 31);
-            this.TBBMImet.TabIndex = 1;
             // 
             // label5
             // 
@@ -327,6 +305,20 @@
             this.NudStones.Size = new System.Drawing.Size(120, 20);
             this.NudStones.TabIndex = 0;
             // 
+            // bmiTextMet
+            // 
+            this.bmiTextMet.Location = new System.Drawing.Point(150, 17);
+            this.bmiTextMet.Name = "bmiTextMet";
+            this.bmiTextMet.Size = new System.Drawing.Size(131, 20);
+            this.bmiTextMet.TabIndex = 8;
+            // 
+            // CatMet
+            // 
+            this.CatMet.Location = new System.Drawing.Point(150, 52);
+            this.CatMet.Name = "CatMet";
+            this.CatMet.Size = new System.Drawing.Size(131, 20);
+            this.CatMet.TabIndex = 9;
+            // 
             // Metric
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,9 +363,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox TBCatmet;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox TBBMImet;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel2;
@@ -385,5 +375,7 @@
         private System.Windows.Forms.NumericUpDown NudStones;
         private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.TextBox CatMet;
+        private System.Windows.Forms.TextBox bmiTextMet;
     }
 }

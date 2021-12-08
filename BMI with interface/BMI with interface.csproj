@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Imperial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imperial.Designer.cs">
+      <DependentUpon>Imperial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Metric.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Imperial.resx">
+      <DependentUpon>Imperial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Metric.resx">
       <DependentUpon>Metric.cs</DependentUpon>
     </EmbeddedResource>

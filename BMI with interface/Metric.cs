@@ -5,7 +5,7 @@ namespace BMI_with_interface
 {
     public partial class Metric : Form
     {
-        public static int bmimet;
+        public int bmimet;
         public Metric()
         {
             InitializeComponent();
@@ -23,8 +23,8 @@ namespace BMI_with_interface
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            TBBMImet.Clear();
-            TBCatmet.Clear();
+            bmiTextMet.Clear();
+            CatMet.Clear();
             NudFeet.Value = 0;
             NudStones.Value = 0;
             MessageBox.Show("All Clear");
@@ -34,33 +34,27 @@ namespace BMI_with_interface
         {
             int heightfeet = (int)NudFeet.Value;
             int weightstone = (int)NudStones.Value;
-            if (weightstone > 0)
-            {
-                if (heightfeet > 0)
-                {
-                    int bmimet = weightstone / heightfeet * 703;
-                }
-            }
-            else if (heightfeet > 0)
+            bmimet = weightstone / heightfeet * 703;
+            if (heightfeet > 0)
             {
                 if (weightstone > 0)
                 {
-                    TBBMImet.Text = Convert.ToString(bmimet);
+                    bmiTextMet.Text = Convert.ToString(bmimet);
                     if (bmimet < 18)
                     {
-                        TBCatmet.Text = ("Underweight");
+                        CatMet.Text = ("Underweight");
                     }
                     else if (bmimet >= 18 && bmimet <= 25)
                     {
-                        TBCatmet.Text = ("Normal");
+                        CatMet.Text = ("Normal");
                     }
                     else if (bmimet >= 25 && bmimet <= 30)
                     {
-                        TBCatmet.Text = ("Overweight");
+                        CatMet.Text = ("Overweight");
                     }
                     else if (bmimet > 30)
                     {
-                        TBCatmet.Text = ("Obese");
+                        CatMet.Text = ("Obese");
                     }
                 }
             }

@@ -16,7 +16,7 @@ namespace BMI_with_interface
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //new ().Show();
+            new Imperial().Show();
             this.Hide();
         }
 
