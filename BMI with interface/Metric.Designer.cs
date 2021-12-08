@@ -30,6 +30,8 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnClear = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCalculate = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,8 +54,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.NudStones = new System.Windows.Forms.NumericUpDown();
-            this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -88,11 +88,24 @@
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
+            // mainMenuToolStripMenuItem
+            // 
+            this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mainMenuToolStripMenuItem.Text = "Main Menu";
+            this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem1.Text = "Exit";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // btnClear
             // 
@@ -108,6 +121,7 @@
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(68, 20);
             this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -312,17 +326,6 @@
             this.NudStones.Name = "NudStones";
             this.NudStones.Size = new System.Drawing.Size(120, 20);
             this.NudStones.TabIndex = 0;
-            // 
-            // mainMenuToolStripMenuItem
-            // 
-            this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mainMenuToolStripMenuItem.Text = "Main Menu";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // Metric
             // 
