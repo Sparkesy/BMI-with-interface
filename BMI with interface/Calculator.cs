@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace BMI_with_interface
 {
-    public partial class Imperial : Form
+    public partial class Calculator : Form
     {
         public static int bmiimp;
-        public Imperial()
+        public Calculator()
         {
             InitializeComponent();
         }

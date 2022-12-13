@@ -1,7 +1,7 @@
 ﻿
 namespace BMI_with_interface
 {
-    partial class Imperial
+    partial class Calculator
     {
         /// <summary>
         /// Required designer variable.
@@ -31,11 +31,15 @@ namespace BMI_with_interface
         {
             this.NudStones = new System.Windows.Forms.NumericUpDown();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.NUDPoundImp = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.NudFeet = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.NuDInch = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Catimp = new System.Windows.Forms.TextBox();
             this.bmiTextimp = new System.Windows.Forms.TextBox();
@@ -55,22 +59,18 @@ namespace BMI_with_interface
             this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.NUDPoundImp = new System.Windows.Forms.NumericUpDown();
-            this.NuDInch = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.NudStones)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDPoundImp)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NudFeet)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NuDInch)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUDPoundImp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NuDInch)).BeginInit();
             this.SuspendLayout();
             // 
             // NudStones
@@ -91,6 +91,22 @@ namespace BMI_with_interface
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(366, 55);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(183, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Pounds";
+            // 
+            // NUDPoundImp
+            // 
+            this.NUDPoundImp.Location = new System.Drawing.Point(186, 35);
+            this.NUDPoundImp.Name = "NUDPoundImp";
+            this.NUDPoundImp.Size = new System.Drawing.Size(120, 20);
+            this.NUDPoundImp.TabIndex = 3;
             // 
             // label1
             // 
@@ -138,6 +154,22 @@ namespace BMI_with_interface
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(366, 55);
             this.panel2.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(183, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Inches";
+            // 
+            // NuDInch
+            // 
+            this.NuDInch.Location = new System.Drawing.Point(186, 32);
+            this.NuDInch.Name = "NuDInch";
+            this.NuDInch.Size = new System.Drawing.Size(120, 20);
+            this.NuDInch.TabIndex = 4;
             // 
             // groupBox2
             // 
@@ -257,6 +289,7 @@ namespace BMI_with_interface
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.groupBox3, 0, 2);
@@ -277,7 +310,7 @@ namespace BMI_with_interface
             // 
             this.btnCalculate.ForeColor = System.Drawing.Color.Red;
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(68, 20);
+            this.btnCalculate.Size = new System.Drawing.Size(63, 20);
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
@@ -285,25 +318,25 @@ namespace BMI_with_interface
             // 
             this.btnClear.ForeColor = System.Drawing.Color.Red;
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(46, 20);
+            this.btnClear.Size = new System.Drawing.Size(44, 20);
             this.btnClear.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
             this.toolStripMenuItem1.Text = "Exit";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(122, 6);
             // 
             // mainMenuToolStripMenuItem
             // 
             this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
@@ -314,7 +347,7 @@ namespace BMI_with_interface
             this.toolStripSeparator1,
             this.toolStripMenuItem1});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // menuStrip1
@@ -329,39 +362,7 @@ namespace BMI_with_interface
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // NUDPoundImp
-            // 
-            this.NUDPoundImp.Location = new System.Drawing.Point(186, 35);
-            this.NUDPoundImp.Name = "NUDPoundImp";
-            this.NUDPoundImp.Size = new System.Drawing.Size(120, 20);
-            this.NUDPoundImp.TabIndex = 3;
-            // 
-            // NuDInch
-            // 
-            this.NuDInch.Location = new System.Drawing.Point(186, 32);
-            this.NuDInch.Name = "NuDInch";
-            this.NuDInch.Size = new System.Drawing.Size(120, 20);
-            this.NuDInch.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(183, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Pounds";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(183, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Inches";
-            // 
-            // Imperial
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -370,17 +371,19 @@ namespace BMI_with_interface
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.MaximizeBox = false;
-            this.Name = "Imperial";
+            this.Name = "Calculator";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "Imperial";
+            this.Text = "BMI Calculator";
             ((System.ComponentModel.ISupportInitialize)(this.NudStones)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDPoundImp)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.NudFeet)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NuDInch)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -388,8 +391,6 @@ namespace BMI_with_interface
             this.tableLayoutPanel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUDPoundImp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NuDInch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
